@@ -138,22 +138,3 @@ quartus_pgm -m JTAG -o "p;output_files/four_bit_adder.sof"
 ```
 
 Board/JTAG configuration can vary, so confirm the detected hardware and target device before programming.
-
-## Verification Status
-
-The provided Quartus reports show that the **original** project completed Analysis & Synthesis and Fitting successfully on Quartus II 13.0.1, using 17 logic elements on the EP2C35F672C6 device.
-
-Those old reports do not verify the renamed and cleaned repository.
-
-The corrected design was checked structurally for:
-
-- complete entity references;
-- port-map consistency;
-- ripple-carry connectivity;
-- 4-bit sum behavior;
-- carry-out behavior;
-- decoder coverage for all 16 binary inputs;
-- consistency between the renamed top-level entity and Quartus project settings;
-- missing or machine-specific file references.
-
-Quartus and GHDL were not available in the review environment, so compilation and simulation of the corrected repository still need to be performed locally.
