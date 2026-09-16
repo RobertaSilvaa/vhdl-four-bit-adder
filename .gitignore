@@ -1,0 +1,32 @@
+# Quartus generated files and directories
+db/
+incremental_db/
+output_files/
+simulation/
+
+# Quartus workspace and temporary files
+*.qws
+*.qdf
+*.bak
+*.tmp
+
+# Compilation and report artifacts
+*.rpt
+*.summary
+*.smsg
+*.sof
+*.pof
+*.jdi
+*.cdf
+*.pin
+*.done
+
+# Simulation artifacts
+*.wlf
+*.vcd
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
