@@ -139,18 +139,6 @@ quartus_pgm -m JTAG -o "p;output_files/four_bit_adder.sof"
 
 Board/JTAG configuration can vary, so confirm the detected hardware and target device before programming.
 
-## Changes from the Provided Project
-
-- Renamed Portuguese VHDL entities, architectures, ports, and files to English equivalents.
-- Preserved the top-level FPGA I/O names so existing pin assignments and the waveform remain compatible.
-- Replaced component declarations with explicit entity instantiation.
-- Replaced the decoder fallback pattern with blank displays for undefined simulation values.
-- Removed the absolute, machine-specific waveform path from the Quartus configuration.
-- Removed generated Quartus databases, reports, simulation outputs, backups, and workspace files from the repository.
-- Excluded the stale CSV pin export because its pin locations conflict with the active assignments in the provided QSF file.
-- Added an exhaustive arithmetic testbench.
-- Added repository documentation and a Quartus-focused `.gitignore`.
-
 ## Verification Status
 
 The provided Quartus reports show that the **original** project completed Analysis & Synthesis and Fitting successfully on Quartus II 13.0.1, using 17 logic elements on the EP2C35F672C6 device.
@@ -169,9 +157,3 @@ The corrected design was checked structurally for:
 - missing or machine-specific file references.
 
 Quartus and GHDL were not available in the review environment, so compilation and simulation of the corrected repository still need to be performed locally.
-
-## Suggested Commit Message
-
-```text
-refactor: clean and standardize the VHDL four-bit adder project
-```
